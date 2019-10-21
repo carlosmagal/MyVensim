@@ -1,0 +1,8 @@
+<map id="unit_Stock_setEnergy" name="unit_Stock_setEnergy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node2" href="$classSystem.html#a17297ecf9e7e8aa2589551189f528d96" title=" " alt="" coords="209,5,355,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#adafab6f86fb79b5f6bc97203130fc481" title=" " alt="" coords="204,56,360,83"/>
+<area shape="rect" id="node5" href="$classStock.html#a541ba2ca662e58f43a7bfcf291119eb1" title="Energy getter" alt="" coords="221,107,343,133"/>
+<area shape="rect" id="node6" href="$classStock.html#ae42b3fdededff93492768762576ed07f" title="Energy setter" alt="" coords="221,157,343,184"/>
+<area shape="rect" id="node4" href="$classSystemBody.html#ad619aa84ce78634a6505a937c56a8748" title=" " alt="" coords="408,56,595,83"/>
+</map>

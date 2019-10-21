@@ -1,0 +1,383 @@
+\hypertarget{classSystemHandle}{}\doxysection{System\+Handle Class Reference}
+\label{classSystemHandle}\index{SystemHandle@{SystemHandle}}
+
+
+{\ttfamily \#include $<$system\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for System\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSystemHandle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSystemHandle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystemHandle_a89a4db1dc76231a95167a904fd0175c4}{System\+Handle}} ()
+\item 
+virtual \mbox{\hyperlink{classSystemHandle_a4b917da05a077c741b5ddddadf2f5d95}{$\sim$\+System\+Handle}} ()
+\item 
+void \mbox{\hyperlink{classSystemHandle_a5205fff77d57bf9ffa215f4b28430238}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$f)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classFlow}{Flow}} adding}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemHandle_a77facb78893699b76641ab506bc2adb9}{add}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classStock}{Stock}} adding}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemHandle_ab9e84c4281c20b68a07d1b0d2729db94}{run}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em {\bfseries{Running the \mbox{\hyperlink{classSystem}{System}}}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classSystemHandle_a41c0a89007d874463b6cf804700ea771}{get\+Vec\+Stock}} (int position)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classStock}{Stock}} container getter}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classSystemHandle_a009e31594fa7339d29caf3a46b59ce31}{get\+Vec\+Flow}} (int position)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classFlow}{Flow}} container getter}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classSystemHandle_afbe1d7b4403c8e45ad85a5ae49723453}{create\+Stock}} (float energy)
+\item 
+\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classSystemHandle_a8bc40d00edde6b85eeedc70d97b2b0ff}{create\+Flow\+Exp}} ()
+\item 
+\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classSystemHandle_a4b6fa1ab583f842f054a11a2d1e52f7a}{create\+Flow\+Log}} ()
+\item 
+void \mbox{\hyperlink{classSystemHandle_a10d126a8c45ce050f97ceae0184e0650}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$f)
+\item 
+void \mbox{\hyperlink{classSystemHandle_ad400cc4ffe4bf8d3649890ebbdfa88a7}{remove}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s)
+\item 
+void \mbox{\hyperlink{classSystemHandle_a6276801286161ab5ea3f01312bf654ff}{execute}} ()
+\item 
+void \mbox{\hyperlink{classSystemHandle_a06c712b166fe8bad3ad39c30b6e96ac0}{add\+System\+To\+System}} (\mbox{\hyperlink{classSystem}{System}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em {\bfseries{sub-\/\+System adding}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSystem}{System}} $\ast$ \mbox{\hyperlink{classSystemHandle_a4eb451ae30ac96592655e17c32a86ee6}{create\+System}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 44 of file system\+Impl.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSystemHandle_a89a4db1dc76231a95167a904fd0175c4}\label{classSystemHandle_a89a4db1dc76231a95167a904fd0175c4}} 
+\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{SystemHandle()}{SystemHandle()}}
+{\footnotesize\ttfamily System\+Handle\+::\+System\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                   \{}
+\DoxyCodeLine{47         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}} = \textcolor{keyword}{new} \mbox{\hyperlink{classSystemBody}{SystemBody}}();}
+\DoxyCodeLine{48         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}}();}
+\DoxyCodeLine{49     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a4b917da05a077c741b5ddddadf2f5d95}\label{classSystemHandle_a4b917da05a077c741b5ddddadf2f5d95}} 
+\index{SystemHandle@{SystemHandle}!````~SystemHandle@{$\sim$SystemHandle}}
+\index{````~SystemHandle@{$\sim$SystemHandle}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemHandle()}{~SystemHandle()}}
+{\footnotesize\ttfamily virtual System\+Handle\+::$\sim$\+System\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 51 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                            \{}
+\DoxyCodeLine{52         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}}();}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSystemHandle_a5205fff77d57bf9ffa215f4b28430238}\label{classSystemHandle_a5205fff77d57bf9ffa215f4b28430238}} 
+\index{SystemHandle@{SystemHandle}!add@{add}}
+\index{add@{add}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void System\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classFlow}{Flow}} adding}} 
+
+Adds a flow to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implements \mbox{\hyperlink{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}{System}}.
+
+
+
+Definition at line 55 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a14bff897c8101bcc8f0b06c2ade44cd2}{add}}(f);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a77facb78893699b76641ab506bc2adb9}\label{classSystemHandle_a77facb78893699b76641ab506bc2adb9}} 
+\index{SystemHandle@{SystemHandle}!add@{add}}
+\index{add@{add}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void System\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classStock}{Stock}} adding}} 
+
+Adds a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implements \mbox{\hyperlink{classSystem_a61c8c8156940030f2559d702ae0eacd3}{System}}.
+
+
+
+Definition at line 56 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a14bff897c8101bcc8f0b06c2ade44cd2}{add}}(s);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a06c712b166fe8bad3ad39c30b6e96ac0}\label{classSystemHandle_a06c712b166fe8bad3ad39c30b6e96ac0}} 
+\index{SystemHandle@{SystemHandle}!addSystemToSystem@{addSystemToSystem}}
+\index{addSystemToSystem@{addSystemToSystem}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{addSystemToSystem()}{addSystemToSystem()}}
+{\footnotesize\ttfamily void System\+Handle\+::add\+System\+To\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{sub-\/\+System adding}} 
+
+Adds a sub-\/\+System to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implements \mbox{\hyperlink{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}{System}}.
+
+
+
+Definition at line 71 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a7686a74908d7fe1f6ccf5d543ae3522a}{addSystemToSystem}}(s);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a8bc40d00edde6b85eeedc70d97b2b0ff}\label{classSystemHandle_a8bc40d00edde6b85eeedc70d97b2b0ff}} 
+\index{SystemHandle@{SystemHandle}!createFlowExp@{createFlowExp}}
+\index{createFlowExp@{createFlowExp}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{createFlowExp()}{createFlowExp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}}$\ast$ System\+Handle\+::create\+Flow\+Exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_ab6bc3b66847062dc725c16754b58d49c}{createFlowExp}}();\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a4b6fa1ab583f842f054a11a2d1e52f7a}\label{classSystemHandle_a4b6fa1ab583f842f054a11a2d1e52f7a}} 
+\index{SystemHandle@{SystemHandle}!createFlowLog@{createFlowLog}}
+\index{createFlowLog@{createFlowLog}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{createFlowLog()}{createFlowLog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}}$\ast$ System\+Handle\+::create\+Flow\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_af39e4bee50458606ea323f9b7b6d1e0c}{createFlowLog}}();\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_afbe1d7b4403c8e45ad85a5ae49723453}\label{classSystemHandle_afbe1d7b4403c8e45ad85a5ae49723453}} 
+\index{SystemHandle@{SystemHandle}!createStock@{createStock}}
+\index{createStock@{createStock}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{createStock()}{createStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}}$\ast$ System\+Handle\+::create\+Stock (\begin{DoxyParamCaption}\item[{float}]{energy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{System}}.
+
+
+
+Definition at line 63 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a004bc50fc8fa307e7fc993928ec8b3db}{createStock}}(energy);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a4eb451ae30ac96592655e17c32a86ee6}\label{classSystemHandle_a4eb451ae30ac96592655e17c32a86ee6}} 
+\index{SystemHandle@{SystemHandle}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSystem}{System}}$\ast$ System\+Handle\+::create\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 62 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSystemBody_ad619aa84ce78634a6505a937c56a8748}{SystemBody::createSystem}}();\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystemHandle_a4eb451ae30ac96592655e17c32a86ee6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSystemHandle_a6276801286161ab5ea3f01312bf654ff}\label{classSystemHandle_a6276801286161ab5ea3f01312bf654ff}} 
+\index{SystemHandle@{SystemHandle}!execute@{execute}}
+\index{execute@{execute}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void System\+Handle\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSystem_a6825b996c5b5a0bfb099e3e46695f901}{System}}.
+
+
+
+Definition at line 69 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_af3056318418a6918e9a64d51c3fddbfe}{execute}}();\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a009e31594fa7339d29caf3a46b59ce31}\label{classSystemHandle_a009e31594fa7339d29caf3a46b59ce31}} 
+\index{SystemHandle@{SystemHandle}!getVecFlow@{getVecFlow}}
+\index{getVecFlow@{getVecFlow}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{getVecFlow()}{getVecFlow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}}$\ast$ System\+Handle\+::get\+Vec\+Flow (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classFlow}{Flow}} container getter}} 
+
+Receives a position of the vector as a parameter, and returns the flow placed in that position 
+
+Implements \mbox{\hyperlink{classSystem_aaa4b082cfafc5c80be69af96539958b3}{System}}.
+
+
+
+Definition at line 59 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a8d42a04baf3541c446208824a7a51b85}{getVecFlow}}(position);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a41c0a89007d874463b6cf804700ea771}\label{classSystemHandle_a41c0a89007d874463b6cf804700ea771}} 
+\index{SystemHandle@{SystemHandle}!getVecStock@{getVecStock}}
+\index{getVecStock@{getVecStock}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{getVecStock()}{getVecStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}}$\ast$ System\+Handle\+::get\+Vec\+Stock (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classStock}{Stock}} container getter}} 
+
+Receives a position of the vector as a parameter, and returns the \mbox{\hyperlink{classStock}{Stock}} placed in that position 
+
+Implements \mbox{\hyperlink{classSystem_ab27af07ccd0e8146635dafad84f28f6f}{System}}.
+
+
+
+Definition at line 58 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a702509731276ca4dd59a43bc7e11a0fc}{getVecStock}}(position);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a10d126a8c45ce050f97ceae0184e0650}\label{classSystemHandle_a10d126a8c45ce050f97ceae0184e0650}} 
+\index{SystemHandle@{SystemHandle}!remove@{remove}}
+\index{remove@{remove}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void System\+Handle\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSystem_a6ada0807e217f5c815f883c94738660e}{System}}.
+
+
+
+Definition at line 66 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a1b55539e7ec721f22e473f61c534717f}{remove}}(f);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_ad400cc4ffe4bf8d3649890ebbdfa88a7}\label{classSystemHandle_ad400cc4ffe4bf8d3649890ebbdfa88a7}} 
+\index{SystemHandle@{SystemHandle}!remove@{remove}}
+\index{remove@{remove}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void System\+Handle\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{System}}.
+
+
+
+Definition at line 67 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a1b55539e7ec721f22e473f61c534717f}{remove}}(s);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_ab9e84c4281c20b68a07d1b0d2729db94}\label{classSystemHandle_ab9e84c4281c20b68a07d1b0d2729db94}} 
+\index{SystemHandle@{SystemHandle}!run@{run}}
+\index{run@{run}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void System\+Handle\+::run (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Running the \mbox{\hyperlink{classSystem}{System}}}} 
+
+The function that contains the main algorithm of the simulation 
+
+Reimplemented from \mbox{\hyperlink{classSystem_a8406a0374fb789d8dd75af5708cf02c7}{System}}.
+
+
+
+Definition at line 57 of file system\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a405908f887ec8196783ce5462ed6b6bf}{run}}(a,b);\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{systemImpl_8hpp}{system\+Impl.\+hpp}}\end{DoxyCompactItemize}

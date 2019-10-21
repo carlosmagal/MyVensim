@@ -1,0 +1,253 @@
+\hypertarget{classSystem}{}\doxysection{System Class Reference}
+\label{classSystem}\index{System@{System}}
+
+
+{\ttfamily \#include $<$system.\+hpp$>$}
+
+
+
+Inheritance diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$f)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classFlow}{Flow}} adding}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSystem_a61c8c8156940030f2559d702ae0eacd3}{add}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classStock}{Stock}} adding}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSystem_a8406a0374fb789d8dd75af5708cf02c7}{run}} (int, int)
+\begin{DoxyCompactList}\small\item\em {\bfseries{Running the \mbox{\hyperlink{classSystem}{System}}}} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classSystem_ab27af07ccd0e8146635dafad84f28f6f}{get\+Vec\+Stock}} (int position)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classStock}{Stock}} container getter}} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classSystem_aaa4b082cfafc5c80be69af96539958b3}{get\+Vec\+Flow}} (int position)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classFlow}{Flow}} container getter}} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{create\+Stock}} (float energy)=0
+\item 
+{\footnotesize template$<$typename Type\+Flow $>$ }\\\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{create\+Flow}} ()
+\item 
+virtual void \mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{classSystem_a6ada0807e217f5c815f883c94738660e}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{classSystem_a6825b996c5b5a0bfb099e3e46695f901}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}{add\+System\+To\+System}} (\mbox{\hyperlink{classSystem}{System}} $\ast$s)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{sub-\/\+System adding}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSystem}{System}} $\ast$ \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{create\+System}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classSystem}{System}}\+: abstract class about to be implemented 
+
+Definition at line 11 of file system.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}\label{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}} 
+\index{System@{System}!add@{add}}
+\index{add@{add}!System@{System}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void System\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classFlow}{Flow}} adding}} 
+
+Adds a flow to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a5205fff77d57bf9ffa215f4b28430238}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a61c8c8156940030f2559d702ae0eacd3}\label{classSystem_a61c8c8156940030f2559d702ae0eacd3}} 
+\index{System@{System}!add@{add}}
+\index{add@{add}!System@{System}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void System\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classStock}{Stock}} adding}} 
+
+Adds a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a77facb78893699b76641ab506bc2adb9}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}\label{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}} 
+\index{System@{System}!addSystemToSystem@{addSystemToSystem}}
+\index{addSystemToSystem@{addSystemToSystem}!System@{System}}
+\doxysubsubsection{\texorpdfstring{addSystemToSystem()}{addSystemToSystem()}}
+{\footnotesize\ttfamily virtual void System\+::add\+System\+To\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{sub-\/\+System adding}} 
+
+Adds a sub-\/\+System to the \mbox{\hyperlink{classSystem}{System}} 
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a06c712b166fe8bad3ad39c30b6e96ac0}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}\label{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}} 
+\index{System@{System}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!System@{System}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily template$<$typename Type\+Flow $>$ \\
+\mbox{\hyperlink{classFlow}{Flow}}$\ast$ System\+::create\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file system.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                       \{}
+\DoxyCodeLine{44         \mbox{\hyperlink{classFlow}{Flow}} *flow = \textcolor{keyword}{new} TypeFlow;}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} flow;    }
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystem_a17297ecf9e7e8aa2589551189f528d96}\label{classSystem_a17297ecf9e7e8aa2589551189f528d96}} 
+\index{System@{System}!createStock@{createStock}}
+\index{createStock@{createStock}!System@{System}}
+\doxysubsubsection{\texorpdfstring{createStock()}{createStock()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}}$\ast$ System\+::create\+Stock (\begin{DoxyParamCaption}\item[{float}]{energy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSystemHandle_afbe1d7b4403c8e45ad85a5ae49723453}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_adafab6f86fb79b5f6bc97203130fc481}\label{classSystem_adafab6f86fb79b5f6bc97203130fc481}} 
+\index{System@{System}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!System@{System}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} $\ast$ System\+::create\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 67 of file system\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                             \{}
+\DoxyCodeLine{68     \textcolor{keywordflow}{return} \mbox{\hyperlink{classSystemBody_ad619aa84ce78634a6505a937c56a8748}{SystemBody::createSystem}}();}
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystem_adafab6f86fb79b5f6bc97203130fc481_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSystem_a6825b996c5b5a0bfb099e3e46695f901}\label{classSystem_a6825b996c5b5a0bfb099e3e46695f901}} 
+\index{System@{System}!execute@{execute}}
+\index{execute@{execute}!System@{System}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void System\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a6276801286161ab5ea3f01312bf654ff}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_aaa4b082cfafc5c80be69af96539958b3}\label{classSystem_aaa4b082cfafc5c80be69af96539958b3}} 
+\index{System@{System}!getVecFlow@{getVecFlow}}
+\index{getVecFlow@{getVecFlow}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getVecFlow()}{getVecFlow()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFlow}{Flow}}$\ast$ System\+::get\+Vec\+Flow (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classFlow}{Flow}} container getter}} 
+
+Receives a position of the vector as a parameter, and returns the flow placed in that position 
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a009e31594fa7339d29caf3a46b59ce31}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_ab27af07ccd0e8146635dafad84f28f6f}\label{classSystem_ab27af07ccd0e8146635dafad84f28f6f}} 
+\index{System@{System}!getVecStock@{getVecStock}}
+\index{getVecStock@{getVecStock}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getVecStock()}{getVecStock()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}}$\ast$ System\+::get\+Vec\+Stock (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{\mbox{\hyperlink{classStock}{Stock}} container getter}} 
+
+Receives a position of the vector as a parameter, and returns the \mbox{\hyperlink{classStock}{Stock}} placed in that position 
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a41c0a89007d874463b6cf804700ea771}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a6ada0807e217f5c815f883c94738660e}\label{classSystem_a6ada0807e217f5c815f883c94738660e}} 
+\index{System@{System}!remove@{remove}}
+\index{remove@{remove}!System@{System}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void System\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a10d126a8c45ce050f97ceae0184e0650}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a3993fd7437494dba686dee5740fc1f7c}\label{classSystem_a3993fd7437494dba686dee5740fc1f7c}} 
+\index{System@{System}!remove@{remove}}
+\index{remove@{remove}!System@{System}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void System\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSystemHandle_ad400cc4ffe4bf8d3649890ebbdfa88a7}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a8406a0374fb789d8dd75af5708cf02c7}\label{classSystem_a8406a0374fb789d8dd75af5708cf02c7}} 
+\index{System@{System}!run@{run}}
+\index{run@{run}!System@{System}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void System\+::run (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Running the \mbox{\hyperlink{classSystem}{System}}}} 
+
+The function that contains the main algorithm of the simulation 
+
+Implements \mbox{\hyperlink{classModel_a14b66babdc909a74c340f18e5f983f8f}{Model}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSystemHandle_ab9e84c4281c20b68a07d1b0d2729db94}{System\+Handle}}.
+
+
+
+Definition at line 27 of file system.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 \{\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{system_8hpp}{system.\+hpp}}\item 
+My\+Vensim/src/\mbox{\hyperlink{systemImpl_8cpp}{system\+Impl.\+cpp}}\end{DoxyCompactItemize}

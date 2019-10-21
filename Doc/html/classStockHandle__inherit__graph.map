@@ -1,0 +1,6 @@
+<map id="StockHandle" name="StockHandle">
+<area shape="rect" id="node1" title=" " alt="" coords="68,300,193,465"/>
+<area shape="rect" id="node2" href="$classStock.html" title=" " alt="" coords="5,138,107,245"/>
+<area shape="rect" id="node3" href="$classModel.html" title=" " alt="" coords="26,5,86,83"/>
+<area shape="rect" id="node4" href="$classHandle.html" title=" " alt="" coords="131,131,282,252"/>
+</map>

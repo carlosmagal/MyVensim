@@ -1,0 +1,212 @@
+\hypertarget{funcional_8hpp}{}\doxysection{My\+Vensim/test/funcional/funcional.hpp File Reference}
+\label{funcional_8hpp}\index{MyVensim/test/funcional/funcional.hpp@{MyVensim/test/funcional/funcional.hpp}}
+{\ttfamily \#include \char`\"{}../../src/system.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for funcional.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{funcional_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{funcional_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcional_8hpp_a78ed8c1d641408a085543aa2d77ed93f}{t1}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Exponenial test 1}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcional_8hpp_a76cb230c0ffd18dba5932a1677e6866a}{t2}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Exponenial test 2}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcional_8hpp_a4d5ee84ab333815f3c657fbabf7e50a2}{t3}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Logistic test 1}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcional_8hpp_a78ed8c1d641408a085543aa2d77ed93f}\label{funcional_8hpp_a78ed8c1d641408a085543aa2d77ed93f}} 
+\index{funcional.hpp@{funcional.hpp}!t1@{t1}}
+\index{t1@{t1}!funcional.hpp@{funcional.hpp}}
+\doxysubsubsection{\texorpdfstring{t1()}{t1()}}
+{\footnotesize\ttfamily void t1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Exponenial test 1}} 
+
+Simulates a model with two systems and a flow connecting them using the exponential equation 
+
+Definition at line 38 of file funcional.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38          \{}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{41     \mbox{\hyperlink{classSystem}{System}} *m1 = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{42     \mbox{\hyperlink{classStock}{Stock}} *s1 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(100);}
+\DoxyCodeLine{43     \mbox{\hyperlink{classStock}{Stock}} *s2 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{44     \mbox{\hyperlink{classFlow}{Flow}} *f = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     f-\/>\mbox{\hyperlink{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}{connect}}(s1,s2);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     m1-\/>\mbox{\hyperlink{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}{addSystemToSystem}}(m);}
+\DoxyCodeLine{49     m1-\/>\mbox{\hyperlink{classSystem_a6825b996c5b5a0bfb099e3e46695f901}{execute}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{float} test1 = fabs(36.6032 -\/ s1-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{52     \textcolor{keywordtype}{float} test2 = fabs(63.3968 -\/ s2-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     assert(test1 < 0.0001);}
+\DoxyCodeLine{55     assert(test2 < 0.0001);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s1);}
+\DoxyCodeLine{58     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s2);}
+\DoxyCodeLine{59     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(f);}
+\DoxyCodeLine{60     \textcolor{keyword}{delete} m;}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional_8hpp_a78ed8c1d641408a085543aa2d77ed93f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{funcional_8hpp_a76cb230c0ffd18dba5932a1677e6866a}\label{funcional_8hpp_a76cb230c0ffd18dba5932a1677e6866a}} 
+\index{funcional.hpp@{funcional.hpp}!t2@{t2}}
+\index{t2@{t2}!funcional.hpp@{funcional.hpp}}
+\doxysubsubsection{\texorpdfstring{t2()}{t2()}}
+{\footnotesize\ttfamily void t2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Exponenial test 2}} 
+
+Simulates a model with five systems and five flows connecting them using the exponential equation 
+
+Definition at line 64 of file funcional.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64          \{}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{67     \mbox{\hyperlink{classSystem}{System}} *m1 = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \mbox{\hyperlink{classStock}{Stock}} *s1 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(100);}
+\DoxyCodeLine{70     \mbox{\hyperlink{classStock}{Stock}} *s2 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{71     \mbox{\hyperlink{classStock}{Stock}} *s3 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(100);}
+\DoxyCodeLine{72     \mbox{\hyperlink{classStock}{Stock}} *s4 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{73     \mbox{\hyperlink{classStock}{Stock}} *s5 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \mbox{\hyperlink{classFlow}{Flow}} *u = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{76     \mbox{\hyperlink{classFlow}{Flow}} *g = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{77     \mbox{\hyperlink{classFlow}{Flow}} *f = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{78     \mbox{\hyperlink{classFlow}{Flow}} *t = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{79     \mbox{\hyperlink{classFlow}{Flow}} *r = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{80     \mbox{\hyperlink{classFlow}{Flow}} *v = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowExp}{FlowExp}}>();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     v-\/>\mbox{\hyperlink{classFlowHandle_a22c9cece5b0c18673a3428cab3d41bfb}{connect}}(s4, s1);}
+\DoxyCodeLine{83     r-\/>connect(s1,s2);}
+\DoxyCodeLine{84     t-\/>connect(s3,s4);}
+\DoxyCodeLine{85     f-\/>connect(s2,s3);}
+\DoxyCodeLine{86     g-\/>connect(s2,s5);}
+\DoxyCodeLine{87     u-\/>\mbox{\hyperlink{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}{connect}}(s1,s3);}
+\DoxyCodeLine{88     }
+\DoxyCodeLine{89     m1-\/>\mbox{\hyperlink{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}{addSystemToSystem}}(m);}
+\DoxyCodeLine{90     m1-\/>\mbox{\hyperlink{classSystem_a6825b996c5b5a0bfb099e3e46695f901}{execute}}();}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{keywordtype}{float} test1 = fabs(31.8513 -\/ s1-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{93     \textcolor{keywordtype}{float} test2 = fabs(18.4003 -\/ s2-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{94     \textcolor{keywordtype}{float} test3 = fabs(77.1143 -\/ s3-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{95     \textcolor{keywordtype}{float} test4 = fabs(56.1728 -\/ s4-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{96     \textcolor{keywordtype}{float} test5 = fabs(16.4612 -\/ s5-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     assert(test1 < 0.0001);}
+\DoxyCodeLine{99     assert(test2 < 0.0001);}
+\DoxyCodeLine{100     assert(test3 < 0.0001);}
+\DoxyCodeLine{101     assert(test4 < 0.0001);}
+\DoxyCodeLine{102     assert(test5 < 0.0001);}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s1);}
+\DoxyCodeLine{105     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s2);}
+\DoxyCodeLine{106     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s3);}
+\DoxyCodeLine{107     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s4);}
+\DoxyCodeLine{108     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s5);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(u);}
+\DoxyCodeLine{111     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(g);}
+\DoxyCodeLine{112     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(f);}
+\DoxyCodeLine{113     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(t);}
+\DoxyCodeLine{114     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(r);}
+\DoxyCodeLine{115     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(v);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keyword}{delete} m;}
+\DoxyCodeLine{118 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional_8hpp_a76cb230c0ffd18dba5932a1677e6866a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{funcional_8hpp_a4d5ee84ab333815f3c657fbabf7e50a2}\label{funcional_8hpp_a4d5ee84ab333815f3c657fbabf7e50a2}} 
+\index{funcional.hpp@{funcional.hpp}!t3@{t3}}
+\index{t3@{t3}!funcional.hpp@{funcional.hpp}}
+\doxysubsubsection{\texorpdfstring{t3()}{t3()}}
+{\footnotesize\ttfamily void t3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Logistic test 1}} 
+
+Simulates a model with two systems and a flow connecting them using the logistic equation 
+
+Definition at line 15 of file funcional.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15          \{}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{classSystem}{System}} *m1 = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{19     \mbox{\hyperlink{classFlow}{Flow}} *logistic = m-\/>\mbox{\hyperlink{classSystem_ad8c2edf50b1ee821972469bdfcdf9e56}{createFlow}}<\mbox{\hyperlink{classFlowLog}{FlowLog}}>();}
+\DoxyCodeLine{20     \mbox{\hyperlink{classStock}{Stock}} *s1 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(100); }
+\DoxyCodeLine{21     \mbox{\hyperlink{classStock}{Stock}} *s2 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(10);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     logistic-\/>\mbox{\hyperlink{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}{connect}}(s1, s2);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     m1-\/>\mbox{\hyperlink{classSystem_a3f4beb0c88a2a9fa8a49730f6e16b8a9}{addSystemToSystem}}(m);}
+\DoxyCodeLine{26     }
+\DoxyCodeLine{27     m1-\/>\mbox{\hyperlink{classSystem_a6825b996c5b5a0bfb099e3e46695f901}{execute}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     assert(fabs(s1-\/>getEnergy() -\/ 88.2167) < 0.0001);}
+\DoxyCodeLine{30     assert(fabs(s2-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() -\/ 21.7833) < 0.0001);}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{32     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(logistic);}
+\DoxyCodeLine{33     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s1);}
+\DoxyCodeLine{34     m-\/>\mbox{\hyperlink{classSystem_a3993fd7437494dba686dee5740fc1f7c}{remove}}(s2);}
+\DoxyCodeLine{35     \textcolor{keyword}{delete} m;}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional_8hpp_a4d5ee84ab333815f3c657fbabf7e50a2_cgraph}
+\end{center}
+\end{figure}

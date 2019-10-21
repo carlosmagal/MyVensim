@@ -1,0 +1,5 @@
+<map id="FlowLog::equation" name="FlowLog::equation">
+<area shape="rect" id="node1" title="Equation" alt="" coords="5,31,133,57"/>
+<area shape="rect" id="node2" href="$classStock.html#a541ba2ca662e58f43a7bfcf291119eb1" title="Energy getter" alt="" coords="197,5,320,32"/>
+<area shape="rect" id="node3" href="$classFlowHandle.html#a9c21c443f70dad465420b6a6cf258c21" title="Target getter" alt="" coords="181,56,336,83"/>
+</map>

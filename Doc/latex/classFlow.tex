@@ -1,0 +1,213 @@
+\hypertarget{classFlow}{}\doxysection{Flow Class Reference}
+\label{classFlow}\index{Flow@{Flow}}
+
+
+{\ttfamily \#include $<$flow.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classFlow_ac013ad36ce1f104c8e6a939986ebb608}{is\+Connected}} ()=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Checking function}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a8f590a8eaa6d957a21a185c677a747ef}{set\+Source}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Source setter}} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlow_a6d3f369dd49e612a9c69883e24bfabf7}{get\+Source}} ()=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Source getter}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_adebcb4bde60b35c141e2ef14a2be0684}{set\+Target}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s1)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Target setter}} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlow_acbd539765a38f76da9af630413882180}{get\+Target}} ()=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Target getter}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}{connect}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s1, \mbox{\hyperlink{classStock}{Stock}} $\ast$s2)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Connecting funcion}} \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classFlow_acbbdfad30ef99a6a378ad05b887f4ac3}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Equation}} \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow_a113ce8fd56dbd293d0ef74eb7aad3f4a}{get\+Value}} ()=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Value getter}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}{set\+Value}} (double)=0
+\begin{DoxyCompactList}\small\item\em {\bfseries{Value setter}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_ac17c831a7fa1cbec5cb69f6340a20047}{run}} (int, int)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classFlow}{Flow}}\+: What connects the Stocks. Is controlled by a equation 
+
+Definition at line 10 of file flow.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}\label{classFlow_a1c9f34bbff98c594ba993569fe5e9e72}} 
+\index{Flow@{Flow}!connect@{connect}}
+\index{connect@{connect}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Flow\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Connecting funcion}} 
+
+Connects the source and the target to a flow, {\ttfamily s1} is gonna be the {\ttfamily source} and {\ttfamily s2} the {\ttfamily target} 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a22c9cece5b0c18673a3428cab3d41bfb}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_acbbdfad30ef99a6a378ad05b887f4ac3}\label{classFlow_acbbdfad30ef99a6a378ad05b887f4ac3}} 
+\index{Flow@{Flow}!equation@{equation}}
+\index{equation@{equation}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily virtual float Flow\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Equation}} 
+
+The equation responsible of creating the flow between the Stocks 
+
+Implemented in \mbox{\hyperlink{classFlowExp_ac69bdd77abf4e21eda74a9f7398fbb15}{Flow\+Exp}}, \mbox{\hyperlink{classFlowLog_ada3c4932ec70e52ff22a2316b7c06fa5}{Flow\+Log}}, and \mbox{\hyperlink{classFlowHandle_ae715e4b10ab9f5ffbfc66a863b96802e}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a6d3f369dd49e612a9c69883e24bfabf7}\label{classFlow_a6d3f369dd49e612a9c69883e24bfabf7}} 
+\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}}$\ast$ Flow\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Source getter}} 
+
+Returns the source of the flow 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_ab7790ef34d0488b9e9ecda353d8e64d9}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_acbd539765a38f76da9af630413882180}\label{classFlow_acbd539765a38f76da9af630413882180}} 
+\index{Flow@{Flow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}}$\ast$ Flow\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Target getter}} 
+
+Returns the target of the \mbox{\hyperlink{classStock}{Stock}} 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a9c21c443f70dad465420b6a6cf258c21}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a113ce8fd56dbd293d0ef74eb7aad3f4a}\label{classFlow_a113ce8fd56dbd293d0ef74eb7aad3f4a}} 
+\index{Flow@{Flow}!getValue@{getValue}}
+\index{getValue@{getValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double Flow\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Value getter}} 
+
+Returns the content of the variable value 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_af06c37491d38f5d25c26b27955ec42e3}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_ac013ad36ce1f104c8e6a939986ebb608}\label{classFlow_ac013ad36ce1f104c8e6a939986ebb608}} 
+\index{Flow@{Flow}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily virtual bool Flow\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Checking function}} 
+
+Returns {\ttfamily true} if the flow is connected to something 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a9308e33ed5e95a14991ca24322152523}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_ac17c831a7fa1cbec5cb69f6340a20047}\label{classFlow_ac17c831a7fa1cbec5cb69f6340a20047}} 
+\index{Flow@{Flow}!run@{run}}
+\index{run@{run}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void Flow\+::run (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel_a14b66babdc909a74c340f18e5f983f8f}{Model}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classFlowHandle_ab5b604b299fbb6d78157fdb52aaccd73}{Flow\+Handle}}.
+
+
+
+Definition at line 62 of file flow.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlow_a8f590a8eaa6d957a21a185c677a747ef}\label{classFlow_a8f590a8eaa6d957a21a185c677a747ef}} 
+\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Source setter}} 
+
+Sets the source of the flow Receives a \mbox{\hyperlink{classStock}{Stock}} as a parameter 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a5a934b5400375182a870d1a7e91cf94d}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_adebcb4bde60b35c141e2ef14a2be0684}\label{classFlow_adebcb4bde60b35c141e2ef14a2be0684}} 
+\index{Flow@{Flow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Target setter}} 
+
+Sets the target of the \mbox{\hyperlink{classStock}{Stock}} 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a3958e55191baea836b264c4f65d82156}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}\label{classFlow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}} 
+\index{Flow@{Flow}!setValue@{setValue}}
+\index{setValue@{setValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\bfseries{Value setter}} 
+
+Sets the variable value 
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a1d34623666abfe4ee767a3607da1cab2}{Flow\+Handle}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8hpp}{flow.\+hpp}}\end{DoxyCompactItemize}

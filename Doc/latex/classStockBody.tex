@@ -1,0 +1,218 @@
+\hypertarget{classStockBody}{}\doxysection{Stock\+Body Class Reference}
+\label{classStockBody}\index{StockBody@{StockBody}}
+
+
+{\ttfamily \#include $<$stock\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Stock\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classStockBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stock\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classStockBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStockBody_acd6f758d115959fd14f4bc11f9c10238}{Stock\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: zero references when the object is being built. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStockBody_ae0de9262dc70e8e80fa239eba73dfecf}{$\sim$\+Stock\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStockBody_a6ccce34307456a0672b9a8907dae1df7}{Stock\+Body}} (float v)
+\item 
+float \mbox{\hyperlink{classStockBody_a887015ec3a78daa72bd3f695e97f15c2}{get\+Energy}} (void)
+\item 
+virtual void \mbox{\hyperlink{classStockBody_abacdc21a4b15fae83e5ddda951aa3e76}{set\+Energy}} (float energy)
+\item 
+void \mbox{\hyperlink{classStockBody_a65356a206768b7bbd615192ad7b99f5d}{run}} (int a, int b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}{energy\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStockBody_aa6a3e9d650ae7802472fdc2dde38e0be}{Stock\+Body}} (const \mbox{\hyperlink{classStockBody}{Stock\+Body}} \&)
+\begin{DoxyCompactList}\small\item\em No copy allowed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStockBody}{Stock\+Body}} \& \mbox{\hyperlink{classStockBody_a44daefc516c80ee48aab40e7cabccdf8}{operator=}} (const \mbox{\hyperlink{classStockBody}{Stock\+Body}} \&)
+\begin{DoxyCompactList}\small\item\em Implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file stock\+Impl.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStockBody_acd6f758d115959fd14f4bc11f9c10238}\label{classStockBody_acd6f758d115959fd14f4bc11f9c10238}} 
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{StockBody()}{StockBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Stock\+Body\+::\+Stock\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor\+: zero references when the object is being built. 
+
+
+
+Definition at line 9 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                : \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}()\{  }
+\DoxyCodeLine{10         this-\/>\mbox{\hyperlink{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}{energy\_}} = 0;}
+\DoxyCodeLine{11     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_ae0de9262dc70e8e80fa239eba73dfecf}\label{classStockBody_ae0de9262dc70e8e80fa239eba73dfecf}} 
+\index{StockBody@{StockBody}!````~StockBody@{$\sim$StockBody}}
+\index{````~StockBody@{$\sim$StockBody}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$StockBody()}{~StockBody()}}
+{\footnotesize\ttfamily virtual Stock\+Body\+::$\sim$\+Stock\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 13 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_a6ccce34307456a0672b9a8907dae1df7}\label{classStockBody_a6ccce34307456a0672b9a8907dae1df7}} 
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{StockBody()}{StockBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Stock\+Body\+::\+Stock\+Body (\begin{DoxyParamCaption}\item[{float}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 15 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 : \mbox{\hyperlink{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}{energy\_}}(v), \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}()\{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_aa6a3e9d650ae7802472fdc2dde38e0be}\label{classStockBody_aa6a3e9d650ae7802472fdc2dde38e0be}} 
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\index{StockBody@{StockBody}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{StockBody()}{StockBody()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Stock\+Body\+::\+Stock\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStockBody}{Stock\+Body}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+No copy allowed. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStockBody_a887015ec3a78daa72bd3f695e97f15c2}\label{classStockBody_a887015ec3a78daa72bd3f695e97f15c2}} 
+\index{StockBody@{StockBody}!getEnergy@{getEnergy}}
+\index{getEnergy@{getEnergy}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{getEnergy()}{getEnergy()}}
+{\footnotesize\ttfamily float Stock\+Body\+::get\+Energy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file stock\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6                           \{}
+\DoxyCodeLine{7     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}{energy\_}};}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_a44daefc516c80ee48aab40e7cabccdf8}\label{classStockBody_a44daefc516c80ee48aab40e7cabccdf8}} 
+\index{StockBody@{StockBody}!operator=@{operator=}}
+\index{operator=@{operator=}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStockBody}{Stock\+Body}}\& Stock\+Body\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStockBody}{Stock\+Body}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Implementation. 
+
+
+
+Definition at line 28 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{\textcolor{keywordflow}{return} *\textcolor{keyword}{this};\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_a65356a206768b7bbd615192ad7b99f5d}\label{classStockBody_a65356a206768b7bbd615192ad7b99f5d}} 
+\index{StockBody@{StockBody}!run@{run}}
+\index{run@{run}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Stock\+Body\+::run (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStockBody_abacdc21a4b15fae83e5ddda951aa3e76}\label{classStockBody_abacdc21a4b15fae83e5ddda951aa3e76}} 
+\index{StockBody@{StockBody}!setEnergy@{setEnergy}}
+\index{setEnergy@{setEnergy}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{setEnergy()}{setEnergy()}}
+{\footnotesize\ttfamily void Stock\+Body\+::set\+Energy (\begin{DoxyParamCaption}\item[{float}]{energy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 3 of file stock\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                      \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}{energy\_}} = energy;}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}\label{classStockBody_a7ec37ae26dbf2b8071e0b2baeae68bea}} 
+\index{StockBody@{StockBody}!energy\_@{energy\_}}
+\index{energy\_@{energy\_}!StockBody@{StockBody}}
+\doxysubsubsection{\texorpdfstring{energy\_}{energy\_}}
+{\footnotesize\ttfamily float Stock\+Body\+::energy\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 31 of file stock\+Impl.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{stockImpl_8hpp}{stock\+Impl.\+hpp}}\item 
+My\+Vensim/src/\mbox{\hyperlink{stockImpl_8cpp}{stock\+Impl.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{unit__system_8hpp}{}\doxysection{My\+Vensim/test/unit/unit\+\_\+system.hpp File Reference}
+\label{unit__system_8hpp}\index{MyVensim/test/unit/unit\_system.hpp@{MyVensim/test/unit/unit\_system.hpp}}
+{\ttfamily \#include \char`\"{}../../src/system.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for unit\+\_\+system.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{unit__system_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{unit__system_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit__system_8hpp_a6a39fd054412469cd77649218d3ecceb}{unit\+\_\+\+System\+\_\+constructor}} ()
+\item 
+void \mbox{\hyperlink{unit__system_8hpp_a021603784a12638ed34bc8690c832dfc}{unit\+\_\+\+System\+\_\+destructor}} ()
+\item 
+void \mbox{\hyperlink{unit__system_8hpp_a086d37b1c2f86d601493ed1b29cf133f}{unit\+\_\+\+System\+\_\+add\+System}} ()
+\item 
+void \mbox{\hyperlink{unit__system_8hpp_a7c068ac67e24e32344fbad39b06f3949}{unit\+\_\+\+System\+\_\+add\+Flow}} ()
+\item 
+void \mbox{\hyperlink{unit__system_8hpp_ad467de422f8fd316dde6be5ded75b13b}{run\+\_\+unit\+\_\+tests\+\_\+\+System}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unit__system_8hpp_ad467de422f8fd316dde6be5ded75b13b}\label{unit__system_8hpp_ad467de422f8fd316dde6be5ded75b13b}} 
+\index{unit\_system.hpp@{unit\_system.hpp}!run\_unit\_tests\_System@{run\_unit\_tests\_System}}
+\index{run\_unit\_tests\_System@{run\_unit\_tests\_System}!unit\_system.hpp@{unit\_system.hpp}}
+\doxysubsubsection{\texorpdfstring{run\_unit\_tests\_System()}{run\_unit\_tests\_System()}}
+{\footnotesize\ttfamily void run\+\_\+unit\+\_\+tests\+\_\+\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file unit\+\_\+system.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                             \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{unit__system_8cpp_a46e097a8a45f48d72634c5dff1f7ca5f}{unit\_System\_constructor}}();}
+\DoxyCodeLine{26     \mbox{\hyperlink{unit__system_8cpp_a6102352f9630ddcf12eb94bc4b558bc1}{unit\_System\_destructor}}();}
+\DoxyCodeLine{27     \mbox{\hyperlink{unit__system_8cpp_a086d37b1c2f86d601493ed1b29cf133f}{unit\_System\_addSystem}}();}
+\DoxyCodeLine{28     \mbox{\hyperlink{unit__system_8cpp_a7c068ac67e24e32344fbad39b06f3949}{unit\_System\_addFlow}}();}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__system_8hpp_ad467de422f8fd316dde6be5ded75b13b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__system_8hpp_a7c068ac67e24e32344fbad39b06f3949}\label{unit__system_8hpp_a7c068ac67e24e32344fbad39b06f3949}} 
+\index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_addFlow@{unit\_System\_addFlow}}
+\index{unit\_System\_addFlow@{unit\_System\_addFlow}!unit\_system.hpp@{unit\_system.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_System\_addFlow()}{unit\_System\_addFlow()}}
+{\footnotesize\ttfamily void unit\+\_\+\+System\+\_\+add\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file unit\+\_\+system.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                           \{}
+\DoxyCodeLine{16     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{17     \mbox{\hyperlink{classFlow}{Flow}} *f = m-\/>createFlowExp();}
+\DoxyCodeLine{18     }
+\DoxyCodeLine{19     m-\/>\mbox{\hyperlink{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}{add}}(f);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     assert(m-\/>\mbox{\hyperlink{classSystem_aaa4b082cfafc5c80be69af96539958b3}{getVecFlow}}(0)-\/>\mbox{\hyperlink{classFlow_acbd539765a38f76da9af630413882180}{getTarget}}() == f-\/>\mbox{\hyperlink{classFlow_acbd539765a38f76da9af630413882180}{getTarget}}());}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__system_8hpp_a7c068ac67e24e32344fbad39b06f3949_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__system_8hpp_a086d37b1c2f86d601493ed1b29cf133f}\label{unit__system_8hpp_a086d37b1c2f86d601493ed1b29cf133f}} 
+\index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_addSystem@{unit\_System\_addSystem}}
+\index{unit\_System\_addSystem@{unit\_System\_addSystem}!unit\_system.hpp@{unit\_system.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_System\_addSystem()}{unit\_System\_addSystem()}}
+{\footnotesize\ttfamily void unit\+\_\+\+System\+\_\+add\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file unit\+\_\+system.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                             \{}
+\DoxyCodeLine{8     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{9     \mbox{\hyperlink{classStock}{Stock}} *s = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(10);}
+\DoxyCodeLine{10     }
+\DoxyCodeLine{11     m-\/>\mbox{\hyperlink{classSystem_adfea43a6f79f9c2efa65eaf4b1ba2bd7}{add}}(s);}
+\DoxyCodeLine{12     assert(m-\/>\mbox{\hyperlink{classSystem_ab27af07ccd0e8146635dafad84f28f6f}{getVecStock}}(0)-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() == s-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__system_8hpp_a086d37b1c2f86d601493ed1b29cf133f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__system_8hpp_a6a39fd054412469cd77649218d3ecceb}\label{unit__system_8hpp_a6a39fd054412469cd77649218d3ecceb}} 
+\index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_constructor@{unit\_System\_constructor}}
+\index{unit\_System\_constructor@{unit\_System\_constructor}!unit\_system.hpp@{unit\_system.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_System\_constructor()}{unit\_System\_constructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+System\+\_\+constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file unit\+\_\+system.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__system_8hpp_a021603784a12638ed34bc8690c832dfc}\label{unit__system_8hpp_a021603784a12638ed34bc8690c832dfc}} 
+\index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_destructor@{unit\_System\_destructor}}
+\index{unit\_System\_destructor@{unit\_System\_destructor}!unit\_system.hpp@{unit\_system.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_System\_destructor()}{unit\_System\_destructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+System\+\_\+destructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file unit\+\_\+system.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{\}}
+
+\end{DoxyCode}

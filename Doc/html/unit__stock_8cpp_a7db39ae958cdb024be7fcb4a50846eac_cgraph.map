@@ -1,0 +1,13 @@
+<map id="run_unit_tests_Stock" name="run_unit_tests_Stock">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,151,133"/>
+<area shape="rect" id="node2" href="$unit__stock_8cpp.html#a2a49a2403b7e883d645c16ec8591e2e2" title=" " alt="" coords="205,5,361,32"/>
+<area shape="rect" id="node7" href="$unit__stock_8cpp.html#ab025cb6b20eb6e9918cea7901d09b946" title=" " alt="" coords="209,208,358,235"/>
+<area shape="rect" id="node8" href="$unit__stock_8cpp.html#add9f15121c1b682e31c9815447a4757f" title=" " alt="" coords="208,56,359,83"/>
+<area shape="rect" id="node9" href="$unit__stock_8cpp.html#a0e896e8b925f081b79c048bb8670c959" title=" " alt="" coords="199,107,368,133"/>
+<area shape="rect" id="node10" href="$unit__stock_8cpp.html#a8c6a3e6376a88bd8a12fa4335926c32f" title=" " alt="" coords="208,157,359,184"/>
+<area shape="rect" id="node3" href="$classSystem.html#a17297ecf9e7e8aa2589551189f528d96" title=" " alt="" coords="421,5,567,32"/>
+<area shape="rect" id="node4" href="$classSystem.html#adafab6f86fb79b5f6bc97203130fc481" title=" " alt="" coords="416,56,572,83"/>
+<area shape="rect" id="node6" href="$classStock.html#a541ba2ca662e58f43a7bfcf291119eb1" title="Energy getter" alt="" coords="433,107,555,133"/>
+<area shape="rect" id="node5" href="$classSystemBody.html#ad619aa84ce78634a6505a937c56a8748" title=" " alt="" coords="620,56,807,83"/>
+<area shape="rect" id="node11" href="$classStock.html#ae42b3fdededff93492768762576ed07f" title="Energy setter" alt="" coords="433,157,555,184"/>
+</map>

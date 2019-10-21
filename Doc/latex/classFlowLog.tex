@@ -1,0 +1,84 @@
+\hypertarget{classFlowLog}{}\doxysection{Flow\+Log Class Reference}
+\label{classFlowLog}\index{FlowLog@{FlowLog}}
+
+
+{\ttfamily \#include $<$flow\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+Log\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowLog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Log\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowLog__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classFlowLog_ada3c4932ec70e52ff22a2316b7c06fa5}{equation}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Equation}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 57 of file flow\+Impl.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlowLog_ada3c4932ec70e52ff22a2316b7c06fa5}\label{classFlowLog_ada3c4932ec70e52ff22a2316b7c06fa5}} 
+\index{FlowLog@{FlowLog}!equation@{equation}}
+\index{equation@{equation}!FlowLog@{FlowLog}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily float Flow\+Log\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Equation}} 
+
+The equation responsible of creating the flow between the Stocks 
+
+Reimplemented from \mbox{\hyperlink{classFlowHandle_ae715e4b10ab9f5ffbfc66a863b96802e}{Flow\+Handle}}.
+
+
+
+Definition at line 3 of file funcional.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                        \{\textcolor{comment}{//t3 equation}}
+\DoxyCodeLine{4     \textcolor{keywordtype}{float} a = 0.01 * this-\/>\mbox{\hyperlink{classFlowHandle_a9c21c443f70dad465420b6a6cf258c21}{getTarget}}()-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}();}
+\DoxyCodeLine{5     \textcolor{keywordtype}{float} a1 = 1 -\/ ( this-\/>\mbox{\hyperlink{classFlowHandle_a9c21c443f70dad465420b6a6cf258c21}{getTarget}}()-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() / 70 );}
+\DoxyCodeLine{6     \textcolor{keywordtype}{float} a2 = a * a1;}
+\DoxyCodeLine{7     \textcolor{keywordflow}{return} a2;}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classFlowLog_ada3c4932ec70e52ff22a2316b7c06fa5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flowImpl_8hpp}{flow\+Impl.\+hpp}}\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{funcional_8cpp}{funcional.\+cpp}}\end{DoxyCompactItemize}

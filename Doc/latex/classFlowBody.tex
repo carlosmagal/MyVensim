@@ -1,0 +1,352 @@
+\hypertarget{classFlowBody}{}\doxysection{Flow\+Body Class Reference}
+\label{classFlowBody}\index{FlowBody@{FlowBody}}
+
+
+{\ttfamily \#include $<$flow\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classFlowBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classFlowBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowBody_af7c4dc7b257284ba66176985df9ad544}{Flow\+Body}} ()
+\item 
+\mbox{\hyperlink{classFlowBody_a178e56af6c29c29b49c1f9f7af7d9311}{$\sim$\+Flow\+Body}} ()
+\item 
+bool \mbox{\hyperlink{classFlowBody_abbfd9390f496bac9925cb37cb282e118}{is\+Connected}} ()
+\item 
+void \mbox{\hyperlink{classFlowBody_a1f74fbedc8769dc192481577dc194c43}{set\+Source}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s)
+\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlowBody_a0ee64f7b4b98e174e2ef6587f8eb1e3b}{get\+Source}} ()
+\item 
+void \mbox{\hyperlink{classFlowBody_a64ad200acbe092ae216debfb2b2d7d77}{set\+Target}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s1)
+\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlowBody_a5cd7fc805aa48ec03ee2a3ec9bbe52e8}{get\+Target}} ()
+\item 
+void \mbox{\hyperlink{classFlowBody_adeec45c60738915986eaef89714e6885}{connect}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$s1, \mbox{\hyperlink{classStock}{Stock}} $\ast$s2)
+\item 
+virtual float \mbox{\hyperlink{classFlowBody_a57ecd6095382188a2460790b2d3a9cbf}{equation}} ()
+\item 
+double \mbox{\hyperlink{classFlowBody_afa5bc352704915720da7ca3016693747}{get\+Value}} ()
+\item 
+void \mbox{\hyperlink{classFlowBody_add6fa6c9490e97c4334190a6d152e44c}{set\+Value}} (double)
+\item 
+void \mbox{\hyperlink{classFlowBody_ae4e247a6acfad887935bb8b6cabd51aa}{run}} (int a, int b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}}
+\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}}
+\item 
+double \mbox{\hyperlink{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}{value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowBody}{Flow\+Body}} $\ast$ \mbox{\hyperlink{classFlowBody_abfd06ab838ec8f56256d6739b3eb3402}{operator=}} (\mbox{\hyperlink{classFlowBody}{Flow\+Body}} $\ast$s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file flow\+Impl.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlowBody_af7c4dc7b257284ba66176985df9ad544}\label{classFlowBody_af7c4dc7b257284ba66176985df9ad544}} 
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{FlowBody()}{FlowBody()}}
+{\footnotesize\ttfamily Flow\+Body\+::\+Flow\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                   \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}} = NULL;}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}} = NULL;}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}{value}} = 0;}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a178e56af6c29c29b49c1f9f7af7d9311}\label{classFlowBody_a178e56af6c29c29b49c1f9f7af7d9311}} 
+\index{FlowBody@{FlowBody}!````~FlowBody@{$\sim$FlowBody}}
+\index{````~FlowBody@{$\sim$FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$FlowBody()}{~FlowBody()}}
+{\footnotesize\ttfamily Flow\+Body\+::$\sim$\+Flow\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlowBody_adeec45c60738915986eaef89714e6885}\label{classFlowBody_adeec45c60738915986eaef89714e6885}} 
+\index{FlowBody@{FlowBody}!connect@{connect}}
+\index{connect@{connect}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void Flow\+Body\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                           \{}
+\DoxyCodeLine{43     this-\/>\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}} = s1;}
+\DoxyCodeLine{44     this-\/>\mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}} = s2;}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a57ecd6095382188a2460790b2d3a9cbf}\label{classFlowBody_a57ecd6095382188a2460790b2d3a9cbf}} 
+\index{FlowBody@{FlowBody}!equation@{equation}}
+\index{equation@{equation}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily virtual float Flow\+Body\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 20 of file flow\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{ \textcolor{keywordflow}{return} 0;\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a0ee64f7b4b98e174e2ef6587f8eb1e3b}\label{classFlowBody_a0ee64f7b4b98e174e2ef6587f8eb1e3b}} 
+\index{FlowBody@{FlowBody}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}} $\ast$ Flow\+Body\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                           \{}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a5cd7fc805aa48ec03ee2a3ec9bbe52e8}\label{classFlowBody_a5cd7fc805aa48ec03ee2a3ec9bbe52e8}} 
+\index{FlowBody@{FlowBody}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}} $\ast$ Flow\+Body\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                           \{}
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}};}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_afa5bc352704915720da7ca3016693747}\label{classFlowBody_afa5bc352704915720da7ca3016693747}} 
+\index{FlowBody@{FlowBody}!getValue@{getValue}}
+\index{getValue@{getValue}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double Flow\+Body\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                          \{}
+\DoxyCodeLine{47     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}{value}};}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_abbfd9390f496bac9925cb37cb282e118}\label{classFlowBody_abbfd9390f496bac9925cb37cb282e118}} 
+\index{FlowBody@{FlowBody}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily bool Flow\+Body\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                           \{}
+\DoxyCodeLine{12     \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}} != NULL \&\& this-\/>\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}} != NULL)}
+\DoxyCodeLine{13         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{14     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_abfd06ab838ec8f56256d6739b3eb3402}\label{classFlowBody_abfd06ab838ec8f56256d6739b3eb3402}} 
+\index{FlowBody@{FlowBody}!operator=@{operator=}}
+\index{operator=@{operator=}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlowBody}{Flow\+Body}} $\ast$ Flow\+Body\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlowBody}{Flow\+Body}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                         \{}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordflow}{if}(\textcolor{keyword}{this} == s)}
+\DoxyCodeLine{36         \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{37     this-\/>\mbox{\hyperlink{classFlowBody_a1f74fbedc8769dc192481577dc194c43}{setSource}}(s-\/>\mbox{\hyperlink{classFlowBody_a0ee64f7b4b98e174e2ef6587f8eb1e3b}{getSource}}());}
+\DoxyCodeLine{38     this-\/>\mbox{\hyperlink{classFlowBody_a64ad200acbe092ae216debfb2b2d7d77}{setTarget}}(s-\/>\mbox{\hyperlink{classFlowBody_a5cd7fc805aa48ec03ee2a3ec9bbe52e8}{getTarget}}());}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classFlowBody_abfd06ab838ec8f56256d6739b3eb3402_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFlowBody_ae4e247a6acfad887935bb8b6cabd51aa}\label{classFlowBody_ae4e247a6acfad887935bb8b6cabd51aa}} 
+\index{FlowBody@{FlowBody}!run@{run}}
+\index{run@{run}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Flow\+Body\+::run (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file flow\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a1f74fbedc8769dc192481577dc194c43}\label{classFlowBody_a1f74fbedc8769dc192481577dc194c43}} 
+\index{FlowBody@{FlowBody}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                                  \{}
+\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}} = s;}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_a64ad200acbe092ae216debfb2b2d7d77}\label{classFlowBody_a64ad200acbe092ae216debfb2b2d7d77}} 
+\index{FlowBody@{FlowBody}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{s1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                  \{}
+\DoxyCodeLine{26     this-\/>\mbox{\hyperlink{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}{target}} = t;}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFlowBody_add6fa6c9490e97c4334190a6d152e44c}\label{classFlowBody_add6fa6c9490e97c4334190a6d152e44c}} 
+\index{FlowBody@{FlowBody}!setValue@{setValue}}
+\index{setValue@{setValue}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file flow\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                    \{}
+\DoxyCodeLine{50     this-\/>\mbox{\hyperlink{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}{value}} = \mbox{\hyperlink{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}{value}};}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}\label{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}} 
+\index{FlowBody@{FlowBody}!source@{source}}
+\index{source@{source}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}}$\ast$ Flow\+Body\+::source\hspace{0.3cm}{\ttfamily [protected]}}
+
+Where the energy comes from 
+
+Definition at line 28 of file flow\+Impl.\+hpp.
+
+\mbox{\Hypertarget{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}\label{classFlowBody_a42b6d6a2685207b62ea60b3296ed4a48}} 
+\index{FlowBody@{FlowBody}!target@{target}}
+\index{target@{target}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}}$\ast$ Flow\+Body\+::target\hspace{0.3cm}{\ttfamily [protected]}}
+
+Where the energy goes to 
+
+Definition at line 27 of file flow\+Impl.\+hpp.
+
+\mbox{\Hypertarget{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}\label{classFlowBody_ab25276bad652ecae5f30c0de773bb33a}} 
+\index{FlowBody@{FlowBody}!value@{value}}
+\index{value@{value}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double Flow\+Body\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 29 of file flow\+Impl.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flowImpl_8hpp}{flow\+Impl.\+hpp}}\item 
+My\+Vensim/src/\mbox{\hyperlink{flowImpl_8cpp}{flow\+Impl.\+cpp}}\end{DoxyCompactItemize}

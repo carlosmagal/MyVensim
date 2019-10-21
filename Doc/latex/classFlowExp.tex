@@ -1,0 +1,82 @@
+\hypertarget{classFlowExp}{}\doxysection{Flow\+Exp Class Reference}
+\label{classFlowExp}\index{FlowExp@{FlowExp}}
+
+
+{\ttfamily \#include $<$flow\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+Exp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowExp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Exp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowExp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classFlowExp_ac69bdd77abf4e21eda74a9f7398fbb15}{equation}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Equation}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 60 of file flow\+Impl.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlowExp_ac69bdd77abf4e21eda74a9f7398fbb15}\label{classFlowExp_ac69bdd77abf4e21eda74a9f7398fbb15}} 
+\index{FlowExp@{FlowExp}!equation@{equation}}
+\index{equation@{equation}!FlowExp@{FlowExp}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily float Flow\+Exp\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Equation}} 
+
+The equation responsible of creating the flow between the Stocks 
+
+Reimplemented from \mbox{\hyperlink{classFlowHandle_ae715e4b10ab9f5ffbfc66a863b96802e}{Flow\+Handle}}.
+
+
+
+Definition at line 10 of file funcional.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                        \{\textcolor{comment}{//t1-\/t2 equation}}
+\DoxyCodeLine{11     \textcolor{keywordtype}{float} aux = (0.01 * this-\/>\mbox{\hyperlink{classFlowHandle_ab7790ef34d0488b9e9ecda353d8e64d9}{getSource}}()-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}());}
+\DoxyCodeLine{12     \textcolor{keywordflow}{return} aux;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classFlowExp_ac69bdd77abf4e21eda74a9f7398fbb15_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flowImpl_8hpp}{flow\+Impl.\+hpp}}\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{funcional_8cpp}{funcional.\+cpp}}\end{DoxyCompactItemize}

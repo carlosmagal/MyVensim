@@ -1,0 +1,8 @@
+<map id="StockHandle" name="StockHandle">
+<area shape="rect" id="node1" title=" " alt="" coords="68,633,193,799"/>
+<area shape="rect" id="node2" href="$classStock.html" title=" " alt="" coords="5,470,107,577"/>
+<area shape="rect" id="node3" href="$classModel.html" title=" " alt="" coords="26,271,86,349"/>
+<area shape="rect" id="node4" href="$classHandle.html" title=" " alt="" coords="131,463,282,584"/>
+<area shape="rect" id="node5" href="$classStockBody.html" title=" " alt="" coords="149,220,264,400"/>
+<area shape="rect" id="node6" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="160,5,253,171"/>
+</map>

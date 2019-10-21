@@ -1,0 +1,276 @@
+\hypertarget{classStockHandle}{}\doxysection{Stock\+Handle Class Reference}
+\label{classStockHandle}\index{StockHandle@{StockHandle}}
+
+
+{\ttfamily \#include $<$stock\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Stock\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classStockHandle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stock\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classStockHandle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStockHandle_a59fab866b0f816e3df036ad2d3096a47}{Stock\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStockHandle_acc3d02e428e9c8778bf66c318dcfe88d}{Stock\+Handle}} (float val)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStockHandle_a8df120257fc7545856942e4762644e9f}{$\sim$\+Stock\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStockHandle}{Stock\+Handle}} \& \mbox{\hyperlink{classStockHandle_a2054a0a975437d0fed9e38def5c3ed33}{operator=}} (const \mbox{\hyperlink{classStockHandle}{Stock\+Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classStockHandle_a8e467f1c84628fe10c5971957c130fb6}{get\+Energy}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{Energy getter}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classStockHandle_a58fd72200e3eb55faca87fcd60bd761b}{set\+Energy}} (float val)
+\begin{DoxyCompactList}\small\item\em {\bfseries{Energy setter}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStockHandle_a374e1df675999f533030941782d309b6}{run}} (int a, int b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 35 of file stock\+Impl.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStockHandle_a59fab866b0f816e3df036ad2d3096a47}\label{classStockHandle_a59fab866b0f816e3df036ad2d3096a47}} 
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{StockHandle()}{StockHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Stock\+Handle\+::\+Stock\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+Definition at line 38 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                  \{  }
+\DoxyCodeLine{39         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}} = \textcolor{keyword}{new} \mbox{\hyperlink{classStockBody}{StockBody}}(); }
+\DoxyCodeLine{40         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}}();  }
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classStockHandle_a59fab866b0f816e3df036ad2d3096a47_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classStockHandle_acc3d02e428e9c8778bf66c318dcfe88d}\label{classStockHandle_acc3d02e428e9c8778bf66c318dcfe88d}} 
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{StockHandle()}{StockHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Stock\+Handle\+::\+Stock\+Handle (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+
+
+Definition at line 43 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                           \{  }
+\DoxyCodeLine{44         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}} = \textcolor{keyword}{new} \mbox{\hyperlink{classStockBody}{StockBody}}( val); }
+\DoxyCodeLine{45         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}}();  }
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classStockHandle_acc3d02e428e9c8778bf66c318dcfe88d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classStockHandle_a8df120257fc7545856942e4762644e9f}\label{classStockHandle_a8df120257fc7545856942e4762644e9f}} 
+\index{StockHandle@{StockHandle}!````~StockHandle@{$\sim$StockHandle}}
+\index{````~StockHandle@{$\sim$StockHandle}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{$\sim$StockHandle()}{~StockHandle()}}
+{\footnotesize\ttfamily virtual Stock\+Handle\+::$\sim$\+Stock\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 49 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                           \{ }
+\DoxyCodeLine{50         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}}();}
+\DoxyCodeLine{51     \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classStockHandle_a8df120257fc7545856942e4762644e9f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStockHandle_a8e467f1c84628fe10c5971957c130fb6}\label{classStockHandle_a8e467f1c84628fe10c5971957c130fb6}} 
+\index{StockHandle@{StockHandle}!getEnergy@{getEnergy}}
+\index{getEnergy@{getEnergy}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{getEnergy()}{getEnergy()}}
+{\footnotesize\ttfamily float Stock\+Handle\+::get\+Energy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Energy getter}} 
+
+Returns the value of the energy 
+
+Implements \mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{Stock}}.
+
+
+
+Definition at line 67 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classStockBody_a887015ec3a78daa72bd3f695e97f15c2}{getEnergy}}();  \} }
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStockHandle_a8e467f1c84628fe10c5971957c130fb6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classStockHandle_a2054a0a975437d0fed9e38def5c3ed33}\label{classStockHandle_a2054a0a975437d0fed9e38def5c3ed33}} 
+\index{StockHandle@{StockHandle}!operator=@{operator=}}
+\index{operator=@{operator=}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStockHandle}{Stock\+Handle}}\& Stock\+Handle\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStockHandle}{Stock\+Handle}} \&}]{hd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+assignment operator 
+
+
+
+Definition at line 54 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                                    \{}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{keywordflow}{if} (  \textcolor{keyword}{this} != \&hd )}
+\DoxyCodeLine{57         \{}
+\DoxyCodeLine{58             hd.\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}}();}
+\DoxyCodeLine{59             \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}}();   }
+\DoxyCodeLine{60             \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}  = hd.\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}};}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classStockHandle_a2054a0a975437d0fed9e38def5c3ed33_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classStockHandle_a374e1df675999f533030941782d309b6}\label{classStockHandle_a374e1df675999f533030941782d309b6}} 
+\index{StockHandle@{StockHandle}!run@{run}}
+\index{run@{run}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Stock\+Handle\+::run (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classStock_a9d12bf853d09ffb757254ce20be6edc0}{Stock}}.
+
+
+
+Definition at line 69 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classStockBody_a65356a206768b7bbd615192ad7b99f5d}{run}}(a,b);\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classStockHandle_a374e1df675999f533030941782d309b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classStockHandle_a58fd72200e3eb55faca87fcd60bd761b}\label{classStockHandle_a58fd72200e3eb55faca87fcd60bd761b}} 
+\index{StockHandle@{StockHandle}!setEnergy@{setEnergy}}
+\index{setEnergy@{setEnergy}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{setEnergy()}{setEnergy()}}
+{\footnotesize\ttfamily virtual void Stock\+Handle\+::set\+Energy (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+{\bfseries{Energy setter}} 
+
+Sets the value of the variable energy 
+
+Implements \mbox{\hyperlink{classStock_ae42b3fdededff93492768762576ed07f}{Stock}}.
+
+
+
+Definition at line 68 of file stock\+Impl.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classStockBody_abacdc21a4b15fae83e5ddda951aa3e76}{setEnergy}}(val); \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStockHandle_a58fd72200e3eb55faca87fcd60bd761b_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{stockImpl_8hpp}{stock\+Impl.\+hpp}}\end{DoxyCompactItemize}

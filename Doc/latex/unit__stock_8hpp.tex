@@ -1,0 +1,225 @@
+\hypertarget{unit__stock_8hpp}{}\doxysection{My\+Vensim/test/unit/unit\+\_\+stock.hpp File Reference}
+\label{unit__stock_8hpp}\index{MyVensim/test/unit/unit\_stock.hpp@{MyVensim/test/unit/unit\_stock.hpp}}
+{\ttfamily \#include \char`\"{}../../src/system.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for unit\+\_\+stock.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{unit__stock_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{unit__stock_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_a2a49a2403b7e883d645c16ec8591e2e2}{unit\+\_\+\+Stock\+\_\+constructor}} (void)
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_ab025cb6b20eb6e9918cea7901d09b946}{unit\+\_\+\+Stock\+\_\+destructor}} (void)
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_a8c6a3e6376a88bd8a12fa4335926c32f}{unit\+\_\+\+Stock\+\_\+set\+Energy}} (void)
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_add9f15121c1b682e31c9815447a4757f}{unit\+\_\+\+Stock\+\_\+get\+Energy}} (void)
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_a0e896e8b925f081b79c048bb8670c959}{unit\+\_\+\+Stock\+\_\+opertorequals}} ()
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_ac0b81c96a5f5396e2b5a33c2ce176c00}{unit\+\_\+\+Stock\+\_\+constructor2}} ()
+\item 
+void \mbox{\hyperlink{unit__stock_8hpp_a7db39ae958cdb024be7fcb4a50846eac}{run\+\_\+unit\+\_\+tests\+\_\+\+Stock}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unit__stock_8hpp_a7db39ae958cdb024be7fcb4a50846eac}\label{unit__stock_8hpp_a7db39ae958cdb024be7fcb4a50846eac}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!run\_unit\_tests\_Stock@{run\_unit\_tests\_Stock}}
+\index{run\_unit\_tests\_Stock@{run\_unit\_tests\_Stock}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{run\_unit\_tests\_Stock()}{run\_unit\_tests\_Stock()}}
+{\footnotesize\ttfamily void run\+\_\+unit\+\_\+tests\+\_\+\+Stock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                  \{}
+\DoxyCodeLine{44     \mbox{\hyperlink{unit__stock_8cpp_a2a49a2403b7e883d645c16ec8591e2e2}{unit\_Stock\_constructor}}();}
+\DoxyCodeLine{45     \mbox{\hyperlink{unit__stock_8cpp_ab025cb6b20eb6e9918cea7901d09b946}{unit\_Stock\_destructor}}();}
+\DoxyCodeLine{46     \mbox{\hyperlink{unit__stock_8cpp_add9f15121c1b682e31c9815447a4757f}{unit\_Stock\_getEnergy}}();}
+\DoxyCodeLine{47     \mbox{\hyperlink{unit__stock_8cpp_a8c6a3e6376a88bd8a12fa4335926c32f}{unit\_Stock\_setEnergy}}();}
+\DoxyCodeLine{48     \mbox{\hyperlink{unit__stock_8cpp_a0e896e8b925f081b79c048bb8670c959}{unit\_Stock\_opertorequals}}();}
+\DoxyCodeLine{49     \textcolor{comment}{//unit\_System\_constructor2();}}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_a7db39ae958cdb024be7fcb4a50846eac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__stock_8hpp_a2a49a2403b7e883d645c16ec8591e2e2}\label{unit__stock_8hpp_a2a49a2403b7e883d645c16ec8591e2e2}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_constructor@{unit\_Stock\_constructor}}
+\index{unit\_Stock\_constructor@{unit\_Stock\_constructor}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_constructor()}{unit\_Stock\_constructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+constructor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                   \{}
+\DoxyCodeLine{4     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{5     \mbox{\hyperlink{classStock}{Stock}} *s1 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{6     assert( s1-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() == 0 );}
+\DoxyCodeLine{7     \mbox{\hyperlink{classStock}{Stock}} *s2 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(10);}
+\DoxyCodeLine{8     assert( s2-\/>getEnergy() == 10 );}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_a2a49a2403b7e883d645c16ec8591e2e2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__stock_8hpp_ac0b81c96a5f5396e2b5a33c2ce176c00}\label{unit__stock_8hpp_ac0b81c96a5f5396e2b5a33c2ce176c00}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_constructor2@{unit\_Stock\_constructor2}}
+\index{unit\_Stock\_constructor2@{unit\_Stock\_constructor2}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_constructor2()}{unit\_Stock\_constructor2()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+constructor2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                               \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{39     \mbox{\hyperlink{classStock}{Stock}} *s = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(100);}
+\DoxyCodeLine{40     \textcolor{comment}{//assert(numBodyCreated == 1);}}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_ac0b81c96a5f5396e2b5a33c2ce176c00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__stock_8hpp_ab025cb6b20eb6e9918cea7901d09b946}\label{unit__stock_8hpp_ab025cb6b20eb6e9918cea7901d09b946}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_destructor@{unit\_Stock\_destructor}}
+\index{unit\_Stock\_destructor@{unit\_Stock\_destructor}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_destructor()}{unit\_Stock\_destructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+destructor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__stock_8hpp_add9f15121c1b682e31c9815447a4757f}\label{unit__stock_8hpp_add9f15121c1b682e31c9815447a4757f}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_getEnergy@{unit\_Stock\_getEnergy}}
+\index{unit\_Stock\_getEnergy@{unit\_Stock\_getEnergy}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_getEnergy()}{unit\_Stock\_getEnergy()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+get\+Energy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                 \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{classStock}{Stock}} *s = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(10);}
+\DoxyCodeLine{16     assert( s-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() == 10 );}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_add9f15121c1b682e31c9815447a4757f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__stock_8hpp_a0e896e8b925f081b79c048bb8670c959}\label{unit__stock_8hpp_a0e896e8b925f081b79c048bb8670c959}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_opertorequals@{unit\_Stock\_opertorequals}}
+\index{unit\_Stock\_opertorequals@{unit\_Stock\_opertorequals}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_opertorequals()}{unit\_Stock\_opertorequals()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+opertorequals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                                \{}
+\DoxyCodeLine{27     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{28     \mbox{\hyperlink{classStock}{Stock}} *s1 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(10);}
+\DoxyCodeLine{29     \mbox{\hyperlink{classStock}{Stock}} *s2 = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{30     s1=s2;}
+\DoxyCodeLine{31     assert( s1-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() == s2-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() );}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_a0e896e8b925f081b79c048bb8670c959_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{unit__stock_8hpp_a8c6a3e6376a88bd8a12fa4335926c32f}\label{unit__stock_8hpp_a8c6a3e6376a88bd8a12fa4335926c32f}} 
+\index{unit\_stock.hpp@{unit\_stock.hpp}!unit\_Stock\_setEnergy@{unit\_Stock\_setEnergy}}
+\index{unit\_Stock\_setEnergy@{unit\_Stock\_setEnergy}!unit\_stock.hpp@{unit\_stock.hpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Stock\_setEnergy()}{unit\_Stock\_setEnergy()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Stock\+\_\+set\+Energy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file unit\+\_\+stock.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                   \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{classSystem}{System}} *m = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{classStock}{Stock}} *s = m-\/>\mbox{\hyperlink{classSystem_a17297ecf9e7e8aa2589551189f528d96}{createStock}}(0);}
+\DoxyCodeLine{22     s-\/>\mbox{\hyperlink{classStock_ae42b3fdededff93492768762576ed07f}{setEnergy}}(100);}
+\DoxyCodeLine{23     assert( s-\/>\mbox{\hyperlink{classStock_a541ba2ca662e58f43a7bfcf291119eb1}{getEnergy}}() == 100 );}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__stock_8hpp_a8c6a3e6376a88bd8a12fa4335926c32f_cgraph}
+\end{center}
+\end{figure}
