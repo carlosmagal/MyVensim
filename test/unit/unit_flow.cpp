@@ -1,5 +1,15 @@
 #include"unit_flow.hpp"
+float FlowLog::equation(){//t3 equation
+    float a = 0.01 * this->getTarget()->getEnergy();
+    float a1 = 1 - ( this->getTarget()->getEnergy() / 70 );
+    float a2 = a * a1;
+    return a2;
+}
 
+float FlowExp::equation(){//t1-t2 equation
+    float aux = (0.01 * this->getSource()->getEnergy());
+    return aux;
+}
 
 void unit_Flow_constructor(){
     System *m = System::createSystem();

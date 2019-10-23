@@ -2,10 +2,7 @@
 #define SYSTEM_HPP
 
 #include <vector>
-//class Flow;
-//class Stock;
 #include"flow.hpp"
-//#include "model.hpp"
 using namespace std;
 /*! System: abstract class about to be implemented */
 class System : public Model{
@@ -41,9 +38,9 @@ public:
 
     template <typename TypeFlow>
     Flow* createFlow(){
-        Flow *flow = new TypeFlow;
-        add(flow);
-        return flow;    
+      Flow *flow = new TypeFlow;
+      add(flow);
+      return flow;    
     }
     //virtual Flow* createFlowLog() = 0;
     //virtual Flow* createFlowExp() = 0; 
